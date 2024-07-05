@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kupuna Payment</title>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://sandbox-paybox.pagoplux.com/paybox/index.js" type="module"></script>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/loading.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/StyleFooter.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" class="header tra-menu navbar-light">
+      <div class="header-wrapper">
+        <!-- MOBILE HEADER -->
+        <div class="wsmobileheader clearfix">
+          <span class="smllogo"
+            ><a href="index.html"><img src="img/logo-01.png" alt="mobile-logo" /></a
+          ></span>
+
+          <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <div class="wsmainfull menu clearfix">
+          <div class="wsmainwp clearfix">
+            <!-- HEADER LOGO -->
+            <!--<div class="desktoplogo"><a href="index.html" class="logo-black"><img src="img/logo-01.png" alt="header-logo"></a></div>-->
+            <div class="desktoplogo">
+              <a href="index.html" class="logo-white"><img src="img/logo-01.png" alt="header-logo" class="logo-white" /></a>
+            </div>
+            <div class="desktoplogo">
+              <a href="index.html" class="logo-black"><img src="img/logo-01.png" alt="header-logo" /></a>
+            </div>
+
+            <!-- MAIN MENU -->
+            <nav class="wsmenu clearfix">
+              <ul class="wsmenu-list nav-violet-red-hover">
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true">
+                  <a href="https://www.kupuna.io/index.html">Inicio</a>
+                </li>
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"><a href="https://www.kupuna.io/servicios.html">Servicios&nbsp; </a></li>
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"></li>
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"><a href="https://www.kupuna.io/nosotros.html">Nosotros </a></li>
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"><a href="https://www.kupuna.io/faqs.html">Ayuda</a></li>
+
+                <!-- SIMPLE NAVIGATION LINK -->
+                <li class="nl-simple" aria-haspopup="true"><a href="https://www.kupuna.io/contacto.html">Contacto</a></li>
+
+                <!-- HEADER BUTTON -->
+                <li class="nl-simple" aria-haspopup="true">
+                  <a href="https://login.kupuna.io" class="btn btn-salmon tra-black-hover last-link">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- END MAIN MENU -->
+          </div>
+        </div>
+        <!-- END NAVIGATION MENU -->
+      </div>
+      <!-- End header-wrapper -->
+    </header>
+
+    <div>
+      <div class="responsive-div">
+        <div id="ButtonPaybox"></div>
+      </div>
+    </div>
+
+    <footer id="footer-3" class="footer division bg-blue">
+      <div class="footer-container" align="center">
+        <!-- FOOTER CONTENT -->
+        <div class="row">
+          <!-- FOOTER INFO -->
+          <div class="col-lg-4">
+            <img src="img/LogoSlogan.png" alt="footer-logo" class="footer-logo" />
+            <br /><br />
+            <div class="footer-contact" style="width: 300px; padding-top: 3px">
+              <a href="mailto:hola@kupuna.io">
+                Escríbenos a
+                <span> hola@kupuna.io </span>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=+593963200244&text=Quiero informacion de la facturacion electronica">
+                WhatsApp al
+                <span> +593 96 320 0244 </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- FOOTER LINKS -->
+          <div class="col-lg-4" style="display: flex; justify-content: center">
+            <div class="footer-links-v2 mb-40">
+              <a href="https://www.kupuna.io/index.html">Inicio</a>
+              <a href="https://www.kupuna.io/servicios.html">Servicios</a>
+              <a href="https://www.kupuna.io/nosotros.html">Nosotros</a>
+              <a href="https://www.kupuna.io/faqs.html">Ayuda</a>
+              <a href="https://www.kupuna.io/contacto.html">Contacto</a>
+              <a href="https://login.kupuna.io/">Iniciar Sesión</a>
+            </div>
+          </div>
+
+          <!-- FOOTER LINKS -->
+          <div class="col-lg-4">
+            <div>
+              <!-- Title -->
+              <h3 style="font-size: 15px; font-weight: 500; color: black">Síguenos en</h3>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100087252917329" target="_blank"><span class="flaticon-facebook"></span></a>
+                <a href="https://www.linkedin.com/company/kupuna/" target="_blank"><span class="flaticon-linkedin-logo"></span></a>
+                <a href="https://www.instagram.com/kupuna.io/" target="_blank"><span class="flaticon-instagram"></span></a>
+              </div>
+
+              <img class="mt-10" src="img/MicrosoftForStartups.png" alt="kupuna-footer-logo" width="80%" />
+            </div>
+          </div>
+        </div>
+        <!-- END FOOTER CONTENT -->
+        <!-- BOTTOM FOOTER -->
+        <div class="bottom-footer">
+          <div class="row row-cols-1 row-cols-md-1 d-flex align-items-center">
+            <!-- FOOTER COPYRIGHT -->
+            <div class="col">
+              <div class="footer-copyright">
+                <a href="https://www.kupuna.io/appfacturacionec/privacidad/Pol%C3%ADticas%20de%20Privacidad%20-%20Kupuna%20-%202023.pdf"
+                  >Política de Privacidad</a
+                >
+                <a href="https://www.kupuna.io/appfacturacionec/terminosycondiciones/T%C3%A9rminos%20y%20Condiciones%20-%20Kupuna%20-%202023.pdf"
+                  >Términos y Condiciones</a
+                >
+                <p>© 2023 KUPUNA.&nbsp; |&nbsp; Todos los derechos reservados</p>
+              </div>
+            </div>
+
+            <!-- BOTTOM FOOTER LINKS -->
+            <div class="col"></div>
+          </div>
+          <!-- End row -->
+        </div>
+        <!-- BOTTOM FOOTER -->
+      </div>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
